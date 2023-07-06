@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200&family=Playfair:wght@600&display=swap');
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #ca505e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  
+    
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+ul li a{
+    text-decoration: none;
+}
+.logout{
+    margin-right: 60px;
+}
+ul li a{
+    color: aliceblue;
+}
+footer{
+    width: 100%;
+}
+
+
+

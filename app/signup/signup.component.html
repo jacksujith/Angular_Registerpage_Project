@@ -1,0 +1,32 @@
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="assets\Mobile login-pana.png" alt="#" width="90%" height="100%">
+        </div>
+        <div class="col-md-6 px-4">
+          
+             
+            <form [formGroup]="signup" (ngSubmit)="signupdata(signup)">
+                <h1 class="text-center">SignUp</h1>
+                <div class="form-group ">
+                    <label for="">Username</label>
+                    <input type="text" formControlName="fname" class="form-control mb-3 mt-3" placeholder="Enter the username">
+                </div>
+                <div class="form-group ">
+                    <label for="">Email ID</label>
+                    <input type="email" formControlName="email" class="form-control mb-3 mt-3" placeholder="Enter the Email Id">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" formControlName="password" class="form-control mb-3 mt-3" placeholder="Create New Password">
+                </div>
+                <span>You Have Already Account?.. <a routerLink="">Signup</a></span>
+                <br><br>
+                <button type="submit" class="btn btn-danger" [disabled]="signup.invalid">signup</button>
+            </form>
+
+           
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
